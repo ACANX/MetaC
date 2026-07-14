@@ -1,8 +1,8 @@
 /**
- * MetaC — A C utility library providing common helpers and tools.
+ * MetaC — 一个提供常用辅助工具和函数的 C 语言工具库。
  *
  * @file metac.h
- * @brief Main header for MetaC library
+ * @brief MetaC 库主头文件
  */
 
 #ifndef METAC_H
@@ -15,15 +15,15 @@ extern "C" {
 #include <stddef.h>
 
 /**
- * @brief Returns a greeting message.
- * @param name The name to greet.
- * @return A pointer to a static buffer containing the greeting.
+ * @brief 返回问候消息。
+ * @param name 要问候的名称。
+ * @return 包含问候语的静态缓冲区指针。
  */
 const char* greet(const char* name);
 
 /**
- * @brief Returns the library version string.
- * @return Version string "0.1.0".
+ * @brief 返回库版本号字符串。
+ * @return 版本号 "0.1.0"。
  */
 const char* metac_version(void);
 

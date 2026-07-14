@@ -1,58 +1,58 @@
 # MetaC
 
-A C utility library providing common helpers and tools.
+一个提供常用辅助工具和函数的 C 语言工具库。
 
-## Features
+## 特性
 
-- **C11 standard** — modern C with strict compiler flags
-- **Zero dependencies** — lightweight and fast
-- **Well-tested** — comprehensive test coverage
-- **Static library** — link easily into any project
+- **C11 标准** — 现代 C 语言，严格编译选项
+- **零依赖** — 轻量、快速
+- **充分测试** — 全面的测试覆盖
+- **静态库** — 可轻松链接到任何项目
 
-## Usage
+## 使用方式
 
 ```c
 #include "metac.h"
 
 int main(void) {
-    const char* message = greet("World");
+    const char* message = greet("世界");
     printf("%s\n", message);
     return 0;
 }
 ```
 
-Build with:
+编译：
 
 ```bash
-# Add to your project
+# 添加到你的项目
 gcc -I/path/to/metac/include your_program.c /path/to/metac/build/libmetac.a
 ```
 
-## Development
+## 开发指南
 
 ```bash
-# Build
+# 构建
 make
 
-# Run tests
+# 运行测试
 make test
 
-# Clean build artifacts
+# 清理构建产物
 make clean
 
-# Format code (requires clang-format)
+# 格式化代码（需安装 clang-format）
 make format
 
-# Lint code (requires clang-tidy)
+# 代码静态检查（需安装 clang-tidy）
 make lint
 ```
 
-## Prerequisites
+## 环境要求
 
-- GCC or Clang compiler
+- GCC 或 Clang 编译器
 - GNU Make
-- ar (for static library creation)
+- ar（用于创建静态库）
 
-## License
+## 许可证
 
 Apache License 2.0

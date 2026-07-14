@@ -35,7 +35,7 @@ $(BUILD_DIR):
 
 test: $(TEST_BINS)
 	@for test_bin in $(TEST_BINS); do \
-		echo "Running $$test_bin..."; \
+		echo "运行测试 $$test_bin..."; \
 		$$test_bin; \
 	done
 

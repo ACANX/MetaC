@@ -1,5 +1,5 @@
 /**
- * MetaC — A C utility library providing common helpers and tools.
+ * MetaC — 一个提供常用辅助工具和函数的 C 语言工具库。
  */
 
 #include "metac.h"
@@ -19,7 +19,7 @@ const char* metac_version(void) {
 #ifndef METAC_TEST
 int main(void) {
     printf("%s\n", greet("MetaC"));
-    printf("Version: %s\n", metac_version());
+    printf("版本: %s\n", metac_version());
     return 0;
 }
 #endif /* METAC_TEST */
